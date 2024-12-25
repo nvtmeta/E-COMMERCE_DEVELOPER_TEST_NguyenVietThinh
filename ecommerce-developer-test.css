@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', sans-serif;
+    background-color: #fff;
+    color: #2C2A29;
+}
+
+/* section_01 */
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px;
+    gap: 8px;
+
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.layout__title {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+    color: #2C2A29;
+
+    margin-bottom: 20px;
+
+
+}
+
+.layout__images {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 16px;
+
+    width: 100%;
+    justify-content: center;
+}
+
+.layout__image-wrapper {
+    position: relative;
+    width: 379px;
+    height: 618px;
+}
+
+.layout__image-bg {
+    position: absolute;
+    height: auto;
+    max-width: 100%;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.layout__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    z-index: 2;
+}
+
+.layout__description {
+    max-width: 810px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .layout__images {
+        gap: 16px;
+    }
+
+    .layout__image-wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    .layout__description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+
+
+/* section_02 */
+
+.layout02 {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 8px;
+    width: 1376px;
+    height: 1608px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.layout02__item-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* Align content to the bottom */
+    align-items: flex-end;
+    /* Align content to the right */
+    padding: 0;
+    gap: 48px;
+
+    width: 1376px;
+    height: 800px;
+}
+
+.layout02__item {
+    width: 684px;
+    height: 800px;
+    padding: 33px;
+    border-radius: 24px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: #F4F0EA;
+    /* Align the item to the right */
+    margin-top: auto;
+    overflow: hidden;
+}
+
+.layout02__item-wrapper--image {
+    width: 684px;
+    height: 800px;
+    border-radius: 24px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: #F4F0EA;
+    /* Align the item to the right */
+    margin-top: auto;
+    overflow: hidden;
+}
+
+.layout02__item--image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+
+.layout02__item--title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 74px;
+    color: #1f1f1f;
+}
+
+.layout02__item--description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.layout02__item--subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1f1f1f;
+    margin-bottom: 8px;
+}
+
+.layout02__item--paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #1f1f1f;
+}
+
+.layout02__item-wrapper--reverse {
+    flex-direction: row-reverse;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .layout02 {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+    }
+
+    .layout02__item-wrapper {
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 5px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .layout02__item {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .layout02__item--image {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
+
+    .layout02__item--title {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .layout02__item--subtitle {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .layout02__item--paragraph {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
